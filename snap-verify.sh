@@ -26,7 +26,7 @@ sudo snap ack "$1".assert
 sudo snap ack "$1".account-key
 sudo snap ack "$1".snap-build || echo "Failed to assert snap-build, snap may be compromised."
 
-snap install "$1".snap
+sudo snap install "$1".snap
 
 rm -f "$1".assert "$1".account-key "$1".snap-build "$1".snap
 
